@@ -1,0 +1,10 @@
+{
+	"doctype-first": false,
+	"html-lang-require": true,
+	"title-require": true,
+	"attr-value-not-empty": false,
+	"attr-lowercase": true,
+	"attr-value-double-quotes": true,
+	"attr-sorted": true,
+	"alt-require": true
+}
