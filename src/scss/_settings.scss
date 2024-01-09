@@ -10,7 +10,7 @@ html {
 
 .page {
     height: 100%;
-    font-family: $font-family;
+    font-family: $public-sans;
     -webkit-text-size-adjust: 100%;
 }
 
@@ -75,10 +75,6 @@ a {
 
 .js-focus-visible :focus:not(.focus-visible) {
     outline: none;
-}
-
-.centered {
-    text-align: center;
 }
 
 .dis-scroll {
