@@ -1,4 +1,6 @@
 .header {
+    padding-top: 17px;
+
     .header__wrapper {
         @include flex-all-sb;
 
@@ -14,7 +16,7 @@
                 margin-right: 51px;
 
                 .menu__link {
-                    color: black;
+                    color: $FFFFFF;
                     font-size: 13px;
                     font-style: normal;
                     font-weight: 400;
@@ -31,4 +33,13 @@
             }
         }
     }
+}
+
+.header_position {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    width: 100%;
 }
