@@ -3,9 +3,19 @@
         <div class="header__wrapper">
             <a class="header__logo" href="/">
                 <picture>
-                    <source type="image/avif" srcset="img/logo.avif" />
-                    <source type="image/webp" srcset="img/logo.webp" />
-                    <img src="img/logo.png" alt="logo" />
+                    <source
+                        type="image/avif"
+                        srcset="img/logo.avif, img/logo_2x.avif 2x"
+                    />
+                    <source
+                        type="image/webp"
+                        srcset="img/logo.webp, img/logo_2x.webp 2x"
+                    />
+                    <img
+                        src="img/logo.png"
+                        srcset="img/logo_2x.png 2x"
+                        alt="logo"
+                    />
                 </picture>
             </a>
             <nav class="menu">

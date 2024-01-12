@@ -7,17 +7,23 @@
 @mixin image-set-jpg($pathToImage) {
     background-image: url('#{$pathToImage}.jpg');
     background-image: image-set(
-        '#{$pathToImage}.avif' type('image/avif'),
-        '#{$pathToImage}.webp' type('image/webp'),
-        '#{$pathToImage}.jpg' type('image/jpeg')
+        url('#{$pathToImage}.avif') type('image/avif') 1x,
+        url('#{$pathToImage}_2x.avif') type('image/avif') 2x,
+        url('#{$pathToImage}.webp') type('image/webp') 1x,
+        url('#{$pathToImage}_2x.webp') type('image/webp') 2x,
+        url('#{$pathToImage}.jpg') type('image/jpeg') 1x,
+        url('#{$pathToImage}_2x.jpg') type('image/jpeg') 2x
     );
 }
 
 @mixin image-set-png($pathToImage) {
     background-image: url('#{$pathToImage}.png');
     background-image: image-set(
-        '#{$pathToImage}.avif' type('image/avif'),
-        '#{$pathToImage}.webp' type('image/webp'),
-        '#{$pathToImage}.png' type('image/png')
+        url('#{$pathToImage}.avif') type('image/avif') 1x,
+        url('#{$pathToImage}_2x.avif') type('image/avif') 2x,
+        url('#{$pathToImage}.webp') type('image/webp') 1x,
+        url('#{$pathToImage}_2x.webp') type('image/webp') 2x,
+        url('#{$pathToImage}.png') type('image/png') 1x,
+        url('#{$pathToImage}_2x.png') type('image/png') 2x
     );
 }
