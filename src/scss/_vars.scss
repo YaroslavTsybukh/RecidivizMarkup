@@ -7,5 +7,12 @@ $container-width: calc($content-width + ($container-offset * 2));
 $public-sans: 'Public Sans', sans-serif;
 $libre-baskerville: 'Libre Baskerville', serif;
 
-// colors
-$FFFFFF: #fff;
+// colors (100-900)
+$white-100: #fff;
+
+$green-100: #014c48;
+$green-200: #003331;
+
+$blue-100: rgba(53, 83, 98, 0.8);
+
+$grey-100: rgba(53, 83, 98, 0.2);
