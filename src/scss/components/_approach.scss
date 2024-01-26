@@ -1,0 +1,109 @@
+.approach {
+    padding: 60px 0;
+
+    .approach__top {
+        @include flex-all-sb;
+    }
+
+    .approach__left {
+        max-width: 450px;
+    }
+
+    .approach__heading {
+        color: $green-300;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+    }
+
+    .approach__description {
+        color: $blue-100;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        margin: 13px 0 37px;
+    }
+
+    .approach__button {
+        border-radius: 80px;
+        padding: 17px 33px;
+        color: $green-200;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0.02px;
+        border: 1px solid $grey-100;
+
+        &:hover {
+            background-color: $emerald-100;
+            transition: background-color 0.5s ease-in-out;
+            color: $white-100;
+        }
+    }
+
+    .approach__right {
+        @include flex;
+
+        gap: 8px;
+    }
+
+    .approach__bottom {
+        margin-top: 104px;
+    }
+
+    .approach__list {
+        @include grid-template-12;
+    }
+
+    .approach__item {
+        grid-column: span 2;
+        align-items: center;
+        border-top: 1px solid $grey-100;
+        padding-top: 16px;
+        display: flex;
+        gap: 8px;
+
+        &::before {
+            content: '';
+            display: block;
+            width: 24px;
+            height: 24px;
+            background-repeat: no-repeat;
+            flex-shrink: 0;
+        }
+
+        &_ted::before {
+            background-image: url('../img/sprite.svg#tedIcon');
+        }
+
+        &_nyt::before {
+            background-image: url('../img/sprite.svg#newYorkIcon');
+        }
+
+        &_scoop::before {
+            background-image: url('../img/sprite.svg#stateScoopIcon');
+        }
+
+        &_press::before {
+            background-image: url('../img/sprite.svg#pressIcon');
+        }
+
+        &_time::before {
+            background-image: url('../img/sprite.svg#timeIcon');
+        }
+
+        &_freethink::before {
+            background-image: url('../img/sprite.svg#freethinkIcon');
+        }
+    }
+
+    .approach__paragraph {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 24px;
+        color: $blue-100;
+    }
+}
