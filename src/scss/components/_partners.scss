@@ -1,0 +1,22 @@
+.partners {
+    padding: 16px 0;
+
+    .partners__wrapper {
+        display: flex;
+        gap: 13px;
+        align-items: center;
+    }
+
+    .partners__title {
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0.5px;
+        color: $grey-200;
+        text-transform: uppercase;
+    }
+
+    .partners__all {
+        @extend .partners__title;
+    }
+}
