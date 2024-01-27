@@ -1,0 +1,45 @@
+.information {
+    padding: 88px 0 140px;
+    background-color: $white-200;
+
+    .information__image {
+        @include image-set-png('../img/informationBackground');
+        @include bg-cover;
+
+        height: 732px;
+    }
+
+    .information__title {
+        font-family: $libre-baskerville;
+        font-size: 31px;
+        font-weight: 400;
+        line-height: 38px;
+        letter-spacing: 1.2px;
+        grid-column: span 6;
+        max-width: 80%;
+    }
+
+    .information__list {
+        @include grid-template-6;
+
+        grid-column: 7/-1;
+        row-gap: 36px;
+    }
+
+    .information__item {
+        grid-column: span 3;
+    }
+
+    .information__heading {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 24px;
+        color: $green-300;
+    }
+
+    .information__description {
+        @extend .information__heading;
+
+        color: $blue-100;
+    }
+}
