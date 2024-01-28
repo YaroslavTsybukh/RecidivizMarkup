@@ -1,0 +1,103 @@
+.press {
+    padding: 87px 0 132px;
+
+    .press__head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .press__title {
+        font-family: $libre-baskerville;
+        font-size: 27px;
+        font-weight: 400;
+        line-height: 38px;
+        letter-spacing: 1.2px;
+    }
+
+    .press__button {
+        border: 1px solid $grey-100;
+        border-radius: 80px;
+        padding: 17px 33px;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0.02px;
+
+        &:hover {
+            background-color: $emerald-100;
+            transition: background-color 0.5s ease-in-out;
+            color: $white-100;
+        }
+    }
+
+    .press__list {
+        row-gap: 52px;
+        margin-top: 24px;
+    }
+
+    .press__item {
+        grid-column: span 4;
+        border-top: 1px solid $grey-100;
+        padding: 16px 0 0;
+    }
+
+    .press__block {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-bottom: 10px;
+
+        &::before {
+            content: '';
+            display: block;
+            width: 24px;
+            height: 24px;
+            background-repeat: no-repeat;
+        }
+
+        &_ted::before {
+            background-image: url('../img/sprite.svg#tedIcon');
+        }
+
+        &_news::before {
+            background-image: url('../img/sprite.svg#newsIcon');
+        }
+
+        &_department::before {
+            background-image: url('../img/sprite.svg#departmentIcon');
+        }
+
+        &_ny::before {
+            background-image: url('../img/sprite.svg#newYorkIcon');
+        }
+
+        &_doc::before {
+            background-image: url('../img/sprite.svg#c1Icon');
+        }
+
+        &_crime::before {
+            background-image: url('../img/sprite.svg#crimeIcon');
+        }
+    }
+
+    .press__heading {
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0.5px;
+        color: $grey-200;
+        text-transform: uppercase;
+    }
+
+    .press__time {
+        @extend .press__heading;
+    }
+
+    .press__description {
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 25px;
+        color: $green-200;
+    }
+}
