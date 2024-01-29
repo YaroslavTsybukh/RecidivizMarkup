@@ -41,6 +41,11 @@
         letter-spacing: 0.02px;
         cursor: pointer;
         margin-top: 29px;
+
+        &:hover {
+            background-color: $emerald-100;
+            transition: background-color 0.5s ease-in-out;
+        }
     }
 
     .hero__bottom {
