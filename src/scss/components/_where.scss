@@ -1,0 +1,45 @@
+.where {
+    background-color: $green-600;
+    padding: 146px 0 133px;
+
+    .where__left {
+        grid-column: span 4;
+    }
+
+    .where__title {
+        font-family: $libre-baskerville;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 38px;
+        letter-spacing: 1.2px;
+        color: $white-300;
+    }
+
+    .where__description {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28px;
+        color: $white-300;
+        margin: 43px 0 37px;
+    }
+
+    .where__button {
+        color: $white-100;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0.02px;
+        border-radius: 80px;
+        background-color: $green-100;
+        padding: 16px 32px;
+
+        &:hover {
+            background-color: $emerald-100;
+            transition: background-color 0.5s ease-in-out;
+        }
+    }
+
+    .where__picture {
+        grid-column: 7 / span 5;
+    }
+}
